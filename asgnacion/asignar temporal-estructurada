@@ -1,0 +1,34 @@
+
+Lea bx, cadtemp
+Lea si, cadest
+mov cl, [bx]
+inc si
+mov dl, [si]
+inc bx
+inc si
+ciclo:
+    inc bx
+    loop ciclo
+    
+mov cl, dl 
+copiar:
+    mov al, [si]
+    mov [bx], al
+    inc bx
+    inc si
+
+    loop copiar
+continuar:  
+    Lea bx, cadtemp
+    mov cl, dl
+actualizar:
+    inc [bx]
+    loop actualizar
+salir:    
+    ret
+
+
+
+
+cadtemp db 4, "asdf"
+cadest db 100, 4, "1234"

@@ -1,0 +1,28 @@
+
+Lea bx, cadasc
+Lea si, cadasc2
+
+ciclo:
+    cmp [bx], 0
+    je copiar
+    inc bx
+    jmp ciclo
+               
+
+copiar:
+    mov al, [si]
+    cmp al, 0
+    je salir
+    mov [bx], al
+    inc bx
+    inc si
+    jmp copiar
+salir:  
+    mov [bx], 0
+    ret
+
+
+
+
+cadasc db "asdf", 0
+cadasc2 db "1234", 0
