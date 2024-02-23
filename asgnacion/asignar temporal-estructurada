@@ -29,6 +29,6 @@ salir:
 
 
 
-
-cadtemp db 4, "asdf"
 cadest db 100, 4, "1234"
+cadtemp db 4, "asdf"
+

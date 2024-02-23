@@ -30,6 +30,6 @@ salir:
 
 
 
-
-cadest db 100, 4, "asdf"
 cadfij db "1234"
+cadest db 100, 4, "asdf"
+

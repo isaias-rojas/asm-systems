@@ -23,6 +23,6 @@ salir:
 
 
 
-
-cadasc db "asdf", 0
 cadasc2 db "1234", 0
+cadasc db "asdf", 0
+
